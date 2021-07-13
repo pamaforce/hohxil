@@ -1,49 +1,34 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view>
-			<text class="title">{{title}}</text>
-		</view>
-	</view>
+  <view>
+    <view class="u-text-center">主页暂未开发</view>
+    <u-tabbar :list="list"></u-tabbar>
+  </view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
-
-		},
-		methods: {
-
-		}
-	}
+export default {
+  data() {
+    return {
+      list: [
+        {
+          iconPath: "home",
+          selectedIconPath: "home-fill",
+          text: "主页",
+          pagePath: "/pages/index/index",
+        },
+        {
+          iconPath: "/static/guide.png",
+          selectedIconPath: "/static/guide-fill.png",
+          text: "导览",
+          pagePath: "/pages/guide/index",
+        },
+      ],
+    };
+  },
+  onLoad() {},
+  methods: {},
+};
 </script>
 
-<style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin: 200rpx auto 50rpx auto;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+<style lang="scss">
 </style>

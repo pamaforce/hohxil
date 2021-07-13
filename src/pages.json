@@ -1,12 +1,36 @@
-{
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+{	
+  	"easycom": {
+    	"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  	},
+	"pages": [
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "可可西里自然保护区"
+			}
+		},
+		{
+			"path": "pages/guide/index",
+			"style": {
+				"navigationBarTitleText": "可可西里自然保护区"
 			}
 		}
 	],
+	"tabBar": {
+		"color": "#909399",
+		"selectedColor": "#303133",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "主页"
+			},{
+				"pagePath": "pages/guide/index",
+				"text": "导览"
+			}
+		]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
