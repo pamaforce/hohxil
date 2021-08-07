@@ -14,6 +14,12 @@
 			"style": {
 				"navigationBarTitleText": "可可西里自然保护区"
 			}
+		},
+		{
+			"path": "pages/detail/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
 		}
 	],
 	"tabBar": {
