@@ -2,12 +2,16 @@
 	<!-- 音频播放器组件 -->
 	<view v-if='url' class='flex justify-between align-center audio' >
 		<view class='img'  @click='start(audioId)'>
-			<image :src='startPic' class='icon' v-show='!status'></image>
-			<image :src='endPic' class='icon' v-show='status'></image>
+			<image src='/static/play.png' class='icon' v-show='!status'></image>
+			<image src='/static/stop.png' class='icon' v-show='status'></image>
 		</view>
 		<view class='time'>{{getTime(Math.round(currentTime),Math.round(duration))}}</view>
 		<view class='flex-1'>
 			<slider @change='changeAudio' :activeColor='activeColor' :backgroundColor='backgroundColor' :min='0' :max='duration.toFixed(0)' :value='currentTime.toFixed(0)' :step='0.1' block-size=15></slider>
+		</view>
+		<view class='img'  @click='mute()'>
+			<image src='/static/not_mute.png' class='icon2' v-show='!muted'></image>
+			<image src='/static/is_mute.png' class='icon2' v-show='muted'></image>
 		</view>
 	</view>
 </template>
@@ -19,7 +23,8 @@
 				context: null,
 				currentTime: 0,
 				duration: 100,
-				status: false
+				status: false,
+				muted: false
 			}
 		},
 		props: {
@@ -32,8 +37,6 @@
 				type: String,
 				default: '#BFC5C8'
 			},
-			startPic: String,
-			endPic: String,
 			audioId: [String,Number]
 		},
 		created() {
@@ -57,12 +60,19 @@
 				let audioId = id;
 				if(this.status) {
 					this.context.pause();
-					this.status = !this.status;
 				}else {
 					uni.$emit('stop',id)
 					this.context.play()
-					this.status = !this.status;
 				}
+				this.status = !this.status;
+			},
+			mute() {
+				if(this.muted) {
+					this.context.volume = 1;
+				} else {
+					this.context.volume = 0;
+				}
+				this.muted = !this.muted;
 			},
 			onCanplay() { //进入可播放状态
 				this.context.onCanplay(() => {
@@ -120,8 +130,15 @@
 	}
 	
 	.icon {
-		width: 60rpx;
-		height: 60rpx;
+		width: 65rpx !important;
+		height: 65rpx !important;
+		padding: 0 0 0 0 !important;
+	}
+	
+	.icon2 {
+		width: 45rpx !important;
+		height: 45rpx !important;
+		padding: 0 10rpx 0 0 !important;
 	}
 	
 	.flex {

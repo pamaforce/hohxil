@@ -1,0 +1,31 @@
+/* imported at App.vue */
+.detail-warpper {
+	padding:0 30rpx 30rpx 30rpx;
+}
+.detail-warpper image{
+	width: 80%;
+	height: 300rpx;
+	padding-top: 10rpx;
+	padding-left: 10%;
+}
+.detail-top-img{
+	width: 100% !important;
+	height: 500rpx !important; 
+	padding:0 0 10rpx 0!important;
+}
+.detail-audio {
+	display: flex;
+	justify-content: center;
+}
+.detail-h1 {
+	font-size: 35rpx;
+	font-weight: bold;
+	padding: 30rpx 0 0 0;
+	line-height: 1.5;
+}
+.detail-warpper text{
+	display: block;
+	font-size: 25rpx;
+	text-indent: 2em;
+	padding-top: 10rpx;
+}
