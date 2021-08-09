@@ -50,7 +50,7 @@
           <view
             class="point-class img-1"
             :style="
-              'left: 91%; top: 47%;width:' +
+              'left: 91%; top: 49%;width:' +
               55 * scale +
               'rpx;height:' +
               60 * scale +
@@ -64,7 +64,7 @@
           <view
             class="point-class img-2"
             :style="
-              'left: 79.5%; top: 51.5%;width:' +
+              'left: 85%; top: 47.3%;width:' +
               91 * scale +
               'rpx;height:' +
               50 * scale +
@@ -76,12 +76,40 @@
             "
           ></view>
           <view
+            class="point-class img-3"
+            :style="
+              'left: 32%; top: 44%;width:' +
+              54 * scale +
+              'rpx;height:' +
+              50 * scale +
+              'rpx'
+            "
+            @click="
+              this.show = true;
+              this.showItem = 2;
+            "
+          ></view>
+          <view
+            class="point-class img-4"
+            :style="
+              'left: 71.8%; top: 58%;width:' +
+              45 * scale +
+              'rpx;height:' +
+              40 * scale +
+              'rpx'
+            "
+            @click="
+              this.show = true;
+              this.showItem = 3;
+            "
+          ></view>
+          <view
             class="point-class img-5"
             :style="
               'left: 69%; top: 61%;width:' +
-              52 * scale +
+              43 * scale +
               'rpx;height:' +
-              65 * scale +
+              54 * scale +
               'rpx'
             "
             @click="
@@ -103,6 +131,62 @@
               this.showItem = 5;
             "
           ></view>
+          <view
+            class="point-class img-7"
+            :style="
+              'left: 91%; top: 30%;width:' +
+              62 * scale +
+              'rpx;height:' +
+              55 * scale +
+              'rpx'
+            "
+            @click="
+              this.show = true;
+              this.showItem = 6;
+            "
+          ></view>
+          <view
+            class="point-class img-8"
+            :style="
+              'left: 94%; top: 46.5%;width:' +
+              45 * scale +
+              'rpx;height:' +
+              50 * scale +
+              'rpx'
+            "
+            @click="
+              this.show = true;
+              this.showItem = 7;
+            "
+          ></view>
+          <view
+            class="point-class img-9"
+            :style="
+              'left: 53%; top: 51%;width:' +
+              42 * scale +
+              'rpx;height:' +
+              50 * scale +
+              'rpx'
+            "
+            @click="
+              this.show = true;
+              this.showItem = 8;
+            "
+          ></view>
+          <view
+            class="point-class img-11"
+            :style="
+              'left: 55%; top: 55%;width:' +
+              44 * scale +
+              'rpx;height:' +
+              55 * scale +
+              'rpx'
+            "
+            @click="
+              this.show = true;
+              this.showItem = 10;
+            "
+          ></view>
           <image
             src="../../static/amap.jpg"
             style="width: 100%; height: 100%"
@@ -112,29 +196,55 @@
         </view>
       </scroll-view>
     </view>
-    <u-popup v-model="show" mode="bottom" border-radius="30" height="260">
+    <u-popup
+      v-model="show"
+      mode="bottom"
+      border-radius="30"
+      height="260"
+      @close="this.showAudio = false"
+    >
       <view class="title-class"> {{ info[showItem].title }} </view>
       <view class="desc-class">{{ info[showItem].desc }}</view>
-      <u-button :custom-style="btnStyle_1" plain ripple shape="circle">
+      <u-button
+        :custom-style="btnStyle_1"
+        plain
+        ripple
+        shape="circle"
+        @click="this.showAudio = !this.showAudio"
+      >
         <img
           src="../../static/mic.png"
           style="width: 64rpx; height: 48rpx"
         />语音解说
       </u-button>
-      <u-button :custom-style="btnStyle_2" plain ripple shape="circle">
+      <u-button
+        :custom-style="btnStyle_2"
+        plain
+        ripple
+        shape="circle"
+        @click="toDetail"
+      >
         <img
           src="../../static/detail.png"
           style="width: 64rpx; height: 48rpx"
         />了解详情
       </u-button>
     </u-popup>
+    <view class="audio-class" v-if="showAudio">
+      <free-audio :audioId="0" :url="path"></free-audio>
+    </view>
     <u-tabbar :list="list"></u-tabbar>
   </view>
 </template>
 <script>
+import freeAudio from "@/components/free-audio/free-audio.vue";
 export default {
+  components: {
+    freeAudio,
+  },
   data() {
     return {
+      path: "/static/audio/example.mp3",
       preDis: 0,
       scale: 1,
       left: "0px",
@@ -142,6 +252,7 @@ export default {
       pleft: 0,
       ptop: 0,
       width: 100,
+      showAudio: false,
       statue: false,
       x: true,
       y: false,
@@ -152,26 +263,58 @@ export default {
         {
           title: "昆仑山口",
           desc: "青海省海西蒙古族藏族自治州格尔木市109国道附近",
+          en: "kunlun_scene",
         },
         {
           title: "杰桑·索南达杰烈士纪念碑",
           desc: "青海省玉树藏族自治州曲麻莱县109国道西100米",
+          en: "monument_scene",
         },
-        { title: "布喀达坂峰", desc: "青海省玉树藏族自治州治多县" },
-        { title: "青藏线", desc: "青海省玉树藏族自治州治多县" },
-        { title: "沱沱河", desc: "青海省海西蒙古族藏族自治州格尔木市" },
+        {
+          title: "布喀达坂峰",
+          desc: "青海省玉树藏族自治州治多县",
+          en: "bukadaban_scene",
+        },
+        {
+          title: "青藏线",
+          desc: "青海省玉树藏族自治州治多县",
+          en: "qingzang_scene",
+        },
+        {
+          title: "沱沱河",
+          desc: "青海省海西蒙古族藏族自治州格尔木市",
+          en: "tuotuo_scene",
+        },
         {
           title: "五道梁保护站",
           desc: "青海省玉树藏族自治州治多县109国道北50米",
+          en: "wudaoliang_scene",
         },
         {
           title: "察尔汗盐湖",
           desc: "青海省海西蒙古族藏族自治州格尔木市北60公里",
+          en: "chaerhan_scene",
         },
-        { title: "三江源", desc: "青海省海西蒙古族藏族自治州" },
-        { title: "卓乃湖", desc: "青海省玉树藏族自治州治多县" },
-        { title: "尕朵觉沃", desc: "青海省玉树藏族自治州称多县尕朵乡" },
-        { title: "楚玛尔河", desc: "青海省玉树藏族自治州西部" },
+        {
+          title: "三江源",
+          desc: "青海省海西蒙古族藏族自治州",
+          en: "sanjiangyuan_scene",
+        },
+        {
+          title: "卓乃湖",
+          desc: "青海省玉树藏族自治州治多县",
+          en: "zhuonai_scene",
+        },
+        {
+          title: "尕朵觉沃",
+          desc: "青海省玉树藏族自治州称多县尕朵乡",
+          en: "gaduojuewo_scene",
+        },
+        {
+          title: "楚玛尔河",
+          desc: "青海省玉树藏族自治州西部",
+          en: "chumaer_scene",
+        },
       ],
       btnStyle_1: {
         position: "absolute",
@@ -209,7 +352,21 @@ export default {
   },
   onLoad() {},
   mounted() {},
+  watch: {
+    showAudio: {
+      handler(newVal) {
+        if (!newVal) {
+          uni.$emit("stop", 0);
+        }
+      },
+    },
+  },
   methods: {
+    toDetail() {
+      uni.navigateTo({
+        url: "../scene/" + this.info[this.showItem].en,
+      });
+    },
     changeSet(set) {
       let sets = [this.x, this.y, this.z];
       if (!sets[set]) {
@@ -264,7 +421,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .top-items-class {
   display: flex;
   align-items: center;
@@ -315,6 +472,13 @@ export default {
   position: absolute;
   background-size: 100% 100%;
 }
+.audio-class {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100rpx;
+  z-index: 10076;
+}
 .img-1 {
   background-image: url("../../static/img1.png");
 }
@@ -344,5 +508,8 @@ export default {
 }
 .img-10 {
   background-image: url("../../static/img10.png");
+}
+.img-11 {
+  background-image: url("../../static/img11.png");
 }
 </style>
