@@ -56,6 +56,7 @@
               60 * scale +
               'rpx'
             "
+            v-show="!y"
             @click="
               this.show = true;
               this.showItem = 0;
@@ -70,6 +71,7 @@
               50 * scale +
               'rpx'
             "
+            v-show="!y"
             @click="
               this.show = true;
               this.showItem = 1;
@@ -84,6 +86,7 @@
               50 * scale +
               'rpx'
             "
+            v-show="!y"
             @click="
               this.show = true;
               this.showItem = 2;
@@ -98,6 +101,7 @@
               40 * scale +
               'rpx'
             "
+            v-show="!y"
             @click="
               this.show = true;
               this.showItem = 3;
@@ -112,6 +116,7 @@
               54 * scale +
               'rpx'
             "
+            v-show="z"
             @click="
               this.show = true;
               this.showItem = 4;
@@ -120,12 +125,13 @@
           <view
             class="point-class img-6"
             :style="
-              'left: 72%; top: 54%;width:' +
-              78 * scale +
+              'left: 73%; top: 55%;width:' +
+              77 * scale +
               'rpx;height:' +
-              45 * scale +
+              40 * scale +
               'rpx'
             "
+            v-show="z"
             @click="
               this.show = true;
               this.showItem = 5;
@@ -140,6 +146,7 @@
               55 * scale +
               'rpx'
             "
+            v-show="!y"
             @click="
               this.show = true;
               this.showItem = 6;
@@ -154,6 +161,7 @@
               50 * scale +
               'rpx'
             "
+            v-show="!y"
             @click="
               this.show = true;
               this.showItem = 7;
@@ -168,6 +176,7 @@
               50 * scale +
               'rpx'
             "
+            v-show="z"
             @click="
               this.show = true;
               this.showItem = 8;
@@ -182,9 +191,85 @@
               55 * scale +
               'rpx'
             "
+            v-show="!y"
             @click="
               this.show = true;
               this.showItem = 10;
+            "
+          ></view>
+          <view
+            class="point-class img-12"
+            :style="
+              'left: 83.5%; top: 50.8%;width:' +
+              77 * scale +
+              'rpx;height:' +
+              40 * scale +
+              'rpx'
+            "
+            v-show="!z"
+            @click="
+              this.show = true;
+              this.showItem = 11;
+            "
+          ></view>
+          <view
+            class="point-class img-13"
+            :style="
+              'left: 50.5%; top: 51.5%;width:' +
+              77 * scale +
+              'rpx;height:' +
+              40 * scale +
+              'rpx'
+            "
+            v-show="!z"
+            @click="
+              this.show = true;
+              this.showItem = 12;
+            "
+          ></view>
+          <view
+            class="point-class img-14"
+            :style="
+              'left: 67%; top: 62%;width:' +
+              77 * scale +
+              'rpx;height:' +
+              40 * scale +
+              'rpx'
+            "
+            v-show="!z"
+            @click="
+              this.show = true;
+              this.showItem = 13;
+            "
+          ></view>
+          <view
+            class="point-class img-15"
+            :style="
+              'left: 79%; top: 52.4%;width:' +
+              84 * scale +
+              'rpx;height:' +
+              40 * scale +
+              'rpx'
+            "
+            v-show="!z"
+            @click="
+              this.show = true;
+              this.showItem = 14;
+            "
+          ></view>
+          <view
+            class="point-class img-16"
+            :style="
+              'left: 73%; top: 55%;width:' +
+              77 * scale +
+              'rpx;height:' +
+              40 * scale +
+              'rpx'
+            "
+            v-show="!z"
+            @click="
+              this.show = true;
+              this.showItem = 15;
             "
           ></view>
           <image
@@ -263,57 +348,82 @@ export default {
         {
           title: "昆仑山口",
           desc: "青海省海西蒙古族藏族自治州格尔木市109国道附近",
-          en: "kunlun_scene",
+          en: "scene/kunlun_scene",
         },
         {
           title: "杰桑·索南达杰烈士纪念碑",
           desc: "青海省玉树藏族自治州曲麻莱县109国道西100米",
-          en: "monument_scene",
+          en: "scene/monument_scene",
         },
         {
           title: "布喀达坂峰",
           desc: "青海省玉树藏族自治州治多县",
-          en: "bukadaban_scene",
+          en: "scene/bukadaban_scene",
         },
         {
           title: "青藏线",
           desc: "青海省玉树藏族自治州治多县",
-          en: "qingzang_scene",
+          en: "scene/qingzang_scene",
         },
         {
           title: "沱沱河",
           desc: "青海省海西蒙古族藏族自治州格尔木市",
-          en: "tuotuo_scene",
+          en: "scene/tuotuo_scene",
         },
         {
-          title: "五道梁保护站",
-          desc: "青海省玉树藏族自治州治多县109国道北50米",
-          en: "wudaoliang_scene",
+          title: "五道梁",
+          desc: "青海省玉树藏族自治州治多县",
+          en: "scene/wudaoliang_scene",
         },
         {
           title: "察尔汗盐湖",
           desc: "青海省海西蒙古族藏族自治州格尔木市北60公里",
-          en: "chaerhan_scene",
+          en: "scene/chaerhan_scene",
         },
         {
           title: "三江源",
           desc: "青海省海西蒙古族藏族自治州",
-          en: "sanjiangyuan_scene",
+          en: "scene/sanjiangyuan_scene",
         },
         {
           title: "卓乃湖",
           desc: "青海省玉树藏族自治州治多县",
-          en: "zhuonai_scene",
+          en: "scene/zhuonai_scene",
         },
         {
           title: "尕朵觉沃",
           desc: "青海省玉树藏族自治州称多县尕朵乡",
-          en: "gaduojuewo_scene",
+          en: "scene/gaduojuewo_scene",
         },
         {
           title: "楚玛尔河",
           desc: "青海省玉树藏族自治州西部",
-          en: "chumaer_scene",
+          en: "scene/chumaer_scene",
+        },
+        {
+          title: "不冻泉保护站",
+          desc: "青海省玉树藏族自治州曲麻莱县109国道北50米",
+          en: "station/bdq_station",
+        },
+        {
+          title: "卓乃湖保护站",
+          desc: "青海省玉树藏族自治州治多县卓乃湖旁",
+          en: "station/znh_station",
+        },
+        {
+          title: "沱沱河保护站",
+          desc: "青海省玉树藏族自治州治多县109国道北50米",
+          en: "station/tth_station",
+        },
+        {
+          title: "索南达杰保护站",
+          desc: "青海省玉树藏族自治州治多县G109(京拉线)",
+          en: "station/sndj_station",
+        },
+        {
+          title: "五道梁保护站",
+          desc: "青海省玉树藏族自治州治多县109国道北50米",
+          en: "station/wdl_station",
         },
       ],
       btnStyle_1: {
@@ -364,7 +474,7 @@ export default {
   methods: {
     toDetail() {
       uni.navigateTo({
-        url: "../scene/" + this.info[this.showItem].en,
+        url: "../" + this.info[this.showItem].en,
       });
     },
     changeSet(set) {
@@ -481,9 +591,11 @@ export default {
 }
 .img-1 {
   background-image: url("../../static/img1.png");
+  z-index: 97;
 }
 .img-2 {
   background-image: url("../../static/img2.png");
+  z-index: 98;
 }
 .img-3 {
   background-image: url("../../static/img3.png");
@@ -502,6 +614,7 @@ export default {
 }
 .img-8 {
   background-image: url("../../static/img8.png");
+  z-index: 99;
 }
 .img-9 {
   background-image: url("../../static/img9.png");
@@ -511,5 +624,22 @@ export default {
 }
 .img-11 {
   background-image: url("../../static/img11.png");
+}
+.img-12 {
+  background-image: url("../../static/img12.png");
+  z-index: 96;
+}
+.img-13 {
+  background-image: url("../../static/img13.png");
+}
+.img-14 {
+  background-image: url("../../static/img14.png");
+}
+.img-15 {
+  background-image: url("../../static/img15.png");
+  z-index: 95;
+}
+.img-16 {
+  background-image: url("../../static/img16.png");
 }
 </style>
