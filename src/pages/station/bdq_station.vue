@@ -23,7 +23,7 @@
 		},
 		data() {
 			return {
-				path: '/static/audio/example.mp3'
+				path: 'https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E6%BB%95%E7%BB%8D%E6%B3%BD%20%E4%B8%8D%E5%86%BB%E6%B3%89.aac?raw=true'
 			};
 		},
 		onLoad() {

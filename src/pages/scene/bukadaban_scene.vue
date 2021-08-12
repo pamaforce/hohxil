@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      path: "/static/audio/example.mp3",
+      path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E5%B8%83%E5%96%80%E8%BE%BE%E5%9D%82.aac?raw=true",
     };
   },
   onLoad() {

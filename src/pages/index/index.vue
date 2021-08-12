@@ -29,7 +29,7 @@
 		methods: {
 			navigateTo() {
 				uni.navigateTo({
-					url: '../station/sndj_station'
+					url: '../station/bdq_station'
 				});
 			}
 		},
