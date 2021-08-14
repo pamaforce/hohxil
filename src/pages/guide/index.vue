@@ -9,7 +9,7 @@
             :src="x ? '../../static/all-fill.png' : '../../static/all.png'"
             class="top-img-class"
           ></image
-          ><text :style="x ? 'color: white' : ''">全部</text></view
+          ><text>全部</text></view
         ><view @click="changeSet(1)" class="item-class"
           ><image
             :src="
@@ -17,7 +17,7 @@
             "
             class="top-img-class"
           ></image
-          ><text :style="y ? 'color: white' : ''">保护站</text></view
+          ><text>保护站</text></view
         ><view @click="changeSet(2)" class="item-class"
           ><image
             :src="
@@ -25,7 +25,7 @@
             "
             class="top-img-class"
           ></image
-          ><text :style="z ? 'color: white' : ''">景点</text></view
+          ><text>景点</text></view
         ></view
       >
       <image src="../../static/north.png" class="fixed-class north-class" />
@@ -536,8 +536,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba($color: #000, $alpha: 0.9);
-  color: #878787;
+  background-color: rgba($color: #f3f7f8, $alpha: 0.9);
+  color: #51b7ad;
 }
 .top-img-class {
   margin: 10px;
