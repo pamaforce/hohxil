@@ -1,167 +1,150 @@
-{	
-  	"easycom": {
-    	"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
-  	},
-	"pages": [
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "可可西里自然保护区"
-			}
-		},
-		{
-			"path": "pages/guide/index",
-			"style": {
-				"navigationBarTitleText": "可可西里自然保护区"
-			}
-		},
-	    {
-            "path" : "pages/station/sndj_station",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "索南达杰保护站"
+{
+    "easycom": {
+        "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+    },
+    "pages": [{
+            "path": "pages/index/index",
+            "style": {
+                "navigationBarTitleText": "可可西里自然保护区"
             }
-        }
-        ,{
-            "path" : "pages/station/bdq_station",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "不冻泉保护站"
+        },
+        {
+            "path": "pages/guide/index",
+            "style": {
+                "navigationBarTitleText": "可可西里自然保护区"
             }
-            
-        }
-        ,{
-            "path" : "pages/station/wdl_station",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "五道梁保护站"
+        },
+        {
+            "path": "pages/wxLink/index",
+            "style": {
+                "navigationBarTitleText": "文章详情"
             }
-            
-        }
-        ,{
-            "path" : "pages/station/tth_station",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "沱沱河保护站"
-            }
-            
-        }
-        ,{
-            "path" : "pages/station/znh_station",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "卓乃湖保护站"
-            }
-            
-        }
-        ,{
-            "path" : "pages/scene/kunlun_scene",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "昆仑山"
-            }
-            
-        }
-        ,{
-            "path" : "pages/scene/monument_scene",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "杰桑·索南达杰纪念碑"
-            }
-            
-        }
-        ,{
-            "path" : "pages/scene/zhuonai_scene",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "卓乃湖"
-            }
-            
-        }
-        ,{
-            "path" : "pages/scene/qingzang_scene",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "青藏公路"
-            }
-            
-        }
-        ,{
-            "path" : "pages/scene/tuotuo_scene",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "沱沱河"
-            }
-            
-        }
-        ,{
-            "path" : "pages/scene/bukadaban_scene",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "布喀达坂峰"
-            }
-            
-        }
-        ,{
-            "path" : "pages/scene/wudaoliang_scene",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "五道梁保护站"
-            }
-            
-        }
-        ,{
-            "path" : "pages/scene/chaerhan_scene",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "察尔汗盐湖"
-            }
-            
-        }
-        ,{
-            "path" : "pages/scene/sanjiangyuan_scene",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "三江源"
-            }
-            
-        }
-        ,{
-            "path" : "pages/scene/gaduojuewo_scene",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "尕朵觉沃"
-            }
-            
-        }
-        ,{
-            "path" : "pages/scene/chumaer_scene",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "楚玛尔河"
-            }
-            
         }
     ],
-	"tabBar": {
-		"color": "#909399",
-		"selectedColor": "#303133",
-		"backgroundColor": "#FFFFFF",
-		"borderStyle": "black",
-		"list": [
-			{
-				"pagePath": "pages/index/index",
-				"text": "主页"
-			},{
-				"pagePath": "pages/guide/index",
-				"text": "导览"
-			}
-		]
-	},
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+    "subPackages": [{
+        "root": "scene",
+        "pages": [{
+            "path": "kunlun_scene/kunlun_scene",
+            "style": {
+                "navigationBarTitleText": "昆仑山"
+            }
+
+        }, {
+            "path": "monument_scene/monument_scene",
+            "style": {
+                "navigationBarTitleText": "杰桑·索南达杰纪念碑"
+            }
+
+        }, {
+            "path": "zhuonai_scene/zhuonai_scene",
+            "style": {
+                "navigationBarTitleText": "卓乃湖"
+            }
+
+        }, {
+            "path": "qingzang_scene/qingzang_scene",
+            "style": {
+                "navigationBarTitleText": "青藏公路"
+            }
+
+        }, {
+            "path": "tuotuo_scene/tuotuo_scene",
+            "style": {
+                "navigationBarTitleText": "沱沱河"
+            }
+
+        }, {
+            "path": "bukadaban_scene/bukadaban_scene",
+            "style": {
+                "navigationBarTitleText": "布喀达坂峰"
+            }
+
+        }, {
+            "path": "wudaoliang_scene/wudaoliang_scene",
+            "style": {
+                "navigationBarTitleText": "五道梁保护站"
+            }
+
+        }, {
+            "path": "chaerhan_scene/chaerhan_scene",
+            "style": {
+                "navigationBarTitleText": "察尔汗盐湖"
+            }
+
+        }, {
+            "path": "sanjiangyuan_scene/sanjiangyuan_scene",
+            "style": {
+                "navigationBarTitleText": "三江源"
+            }
+
+        }, {
+            "path": "gaduojuewo_scene/gaduojuewo_scene",
+            "style": {
+                "navigationBarTitleText": "尕朵觉沃"
+            }
+
+        }, {
+            "path": "chumaer_scene/chumaer_scene",
+            "style": {
+                "navigationBarTitleText": "楚玛尔河"
+            }
+
+        }]
+    }, {
+        "root": "station",
+        "pages": [{
+            "path": "sndj_station/sndj_station",
+            "style": {
+                "navigationBarTitleText": "索南达杰保护站"
+            }
+        }, {
+            "path": "bdq_station/bdq_station",
+            "style": {
+                "navigationBarTitleText": "不冻泉保护站"
+            }
+
+        }, {
+            "path": "wdl_station/wdl_station",
+            "style": {
+                "navigationBarTitleText": "五道梁保护站"
+            }
+
+        }, {
+            "path": "tth_station/tth_station",
+            "style": {
+                "navigationBarTitleText": "沱沱河保护站"
+            }
+
+        }, {
+            "path": "znh_station/znh_station",
+            "style": {
+                "navigationBarTitleText": "卓乃湖保护站"
+            }
+        }]
+    }],
+    "preloadRule": {
+        "pages/guide/index": {
+            "network": "all",
+            "packages": ["station", "scene"]
+        }
+    },
+    "tabBar": {
+        "color": "#909399",
+        "selectedColor": "#303133",
+        "backgroundColor": "#FFFFFF",
+        "borderStyle": "black",
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "主页"
+        }, {
+            "pagePath": "pages/guide/index",
+            "text": "导览"
+        }]
+    },
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "uni-app",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    }
 }

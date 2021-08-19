@@ -3,7 +3,7 @@
     <view>
       <view
         class="fixed-class top-items-class"
-        style="z-index: 999; width: 100%"
+        style="z-index: 999; width: 100%; height: 38px"
         ><view @click="changeSet(0)" class="item-class"
           ><image
             :src="x ? '../../static/all-fill.png' : '../../static/all.png'"
@@ -125,8 +125,8 @@
           <view
             class="point-class img-6"
             :style="
-              'left: 73%; top: 55%;width:' +
-              77 * scale +
+              'left: 74%; top: 54.5%;width:' +
+              36 * scale +
               'rpx;height:' +
               40 * scale +
               'rpx'
@@ -348,82 +348,82 @@ export default {
         {
           title: "昆仑山口",
           desc: "青海省海西蒙古族藏族自治州格尔木市109国道附近",
-          en: "scene/kunlun_scene",
+          en: "scene/kunlun_scene/kunlun_scene",
         },
         {
           title: "杰桑·索南达杰烈士纪念碑",
           desc: "青海省玉树藏族自治州曲麻莱县109国道西100米",
-          en: "scene/monument_scene",
+          en: "scene/monument_scene/monument_scene",
         },
         {
           title: "布喀达坂峰",
           desc: "青海省玉树藏族自治州治多县",
-          en: "scene/bukadaban_scene",
+          en: "scene/bukadaban_scene/bukadaban_scene",
         },
         {
           title: "青藏线",
           desc: "青海省玉树藏族自治州治多县",
-          en: "scene/qingzang_scene",
+          en: "scene/qingzang_scene/qingzang_scene",
         },
         {
           title: "沱沱河",
           desc: "青海省海西蒙古族藏族自治州格尔木市",
-          en: "scene/tuotuo_scene",
+          en: "scene/tuotuo_scene/tuotuo_scene",
         },
         {
           title: "五道梁",
           desc: "青海省玉树藏族自治州治多县",
-          en: "scene/wudaoliang_scene",
+          en: "scene/wudaoliang_scene/wudaoliang_scene",
         },
         {
           title: "察尔汗盐湖",
           desc: "青海省海西蒙古族藏族自治州格尔木市北60公里",
-          en: "scene/chaerhan_scene",
+          en: "scene/chaerhan_scene/chaerhan_scene",
         },
         {
           title: "三江源",
           desc: "青海省海西蒙古族藏族自治州",
-          en: "scene/sanjiangyuan_scene",
+          en: "scene/sanjiangyuan_scene/sanjiangyuan_scene",
         },
         {
           title: "卓乃湖",
           desc: "青海省玉树藏族自治州治多县",
-          en: "scene/zhuonai_scene",
+          en: "scene/zhuonai_scene/zhuonai_scene",
         },
         {
           title: "尕朵觉沃",
           desc: "青海省玉树藏族自治州称多县尕朵乡",
-          en: "scene/gaduojuewo_scene",
+          en: "scene/gaduojuewo_scene/gaduojuewo_scene",
         },
         {
           title: "楚玛尔河",
           desc: "青海省玉树藏族自治州西部",
-          en: "scene/chumaer_scene",
+          en: "scene/chumaer_scene/chumaer_scene",
         },
         {
           title: "不冻泉保护站",
           desc: "青海省玉树藏族自治州曲麻莱县109国道北50米",
-          en: "station/bdq_station",
+          en: "station/bdq_station/bdq_station",
         },
         {
           title: "卓乃湖保护站",
           desc: "青海省玉树藏族自治州治多县卓乃湖旁",
-          en: "station/znh_station",
+          en: "station/znh_station/znh_station",
         },
         {
           title: "沱沱河保护站",
           desc: "青海省玉树藏族自治州治多县109国道北50米",
-          en: "station/tth_station",
+          en: "station/tth_station/tth_station",
         },
         {
           title: "索南达杰保护站",
           desc: "青海省玉树藏族自治州治多县G109(京拉线)",
-          en: "station/sndj_station",
+          en: "station/sndj_station/sndj_station",
         },
         {
           title: "五道梁保护站",
           desc: "青海省玉树藏族自治州治多县109国道北50米",
-          en: "station/wdl_station",
+          en: "station/wdl_station/wdl_station",
         },
       ],
       btnStyle_1: {
@@ -474,7 +474,7 @@ export default {
   methods: {
     toDetail() {
       uni.navigateTo({
-        url: "../" + this.info[this.showItem].en,
+        url: "../../" + this.info[this.showItem].en,
       });
     },
     changeSet(set) {
@@ -493,7 +493,6 @@ export default {
     },
     dragend(e) {
       if (!this.statue) {
-        console.log(e);
         this.pleft =
           (100 * e.detail.scrollLeft) / wx.getSystemInfoSync().windowWidth;
         this.ptop =
