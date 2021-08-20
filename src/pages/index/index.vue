@@ -155,10 +155,10 @@ export default {
 }
 .title-class {
   position: absolute;
-  top: 80rpx;
+  top: 60rpx;
   left: 50rpx;
-  color: white;
-  font-size: 36rpx;
+  color: #fff;
+  font-size: 32rpx;
   font-weight: 600;
 }
 /deep/button {
