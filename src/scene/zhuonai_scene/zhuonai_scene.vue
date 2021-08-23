@@ -31,6 +31,9 @@ export default {
   onHide() {
     uni.$emit("stop");
   },
+  onUnload() {
+  	uni.$emit("stop");  
+  },
   methods: {},
 };
 </script>

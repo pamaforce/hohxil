@@ -20,6 +20,70 @@
                 "navigationBarTitleText": "文章详情"
             }
         }
+        ,{
+            "path" : "article/sndj_station_map/sndj_station_map",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "索南达杰保护站地图"
+            }
+            
+        }
+        ,{
+            "path" : "article/animal_kingdom/animal_kingdom",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "动物王国"
+            }
+            
+        }
+        ,{
+            "path" : "article/the_story_of_sndj/the_story_of_sndj",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "索南达杰的故事"
+            }
+            
+        }
+        ,{
+            "path" : "article/patrol_the_mountain/patrol_the_mountain",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "巡山过程中的那些故事与精神"
+            }
+            
+        }
+        ,{
+            "path" : "article/conservation_of_antelope/conservation_of_antelope",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "藏羚羊的养护"
+            }
+            
+        }
+        ,{
+            "path" : "article/the_origin_of_all_evil/the_origin_of_all_evil",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "一切罪恶的起源"
+            }
+            
+        }
+        ,{
+            "path" : "article/alpine_plant/alpine_plant",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "高寒植物"
+            }
+            
+        }
+        ,{
+            "path" : "pages/about/about",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "关于爱在可可西里"
+            }
+            
+        }
     ],
     "subPackages": [{
         "root": "scene",

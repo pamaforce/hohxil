@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      path: "/static/audio/example.mp3",
+      path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E6%9D%B0%E6%A1%91%C2%B7%E7%B4%A2%E5%8D%97%E8%BE%BE%E6%9D%B0%E7%BA%AA%E5%BF%B5%E7%A2%91.m4a?raw=true",
     };
   },
   onLoad() {
@@ -29,6 +29,9 @@ export default {
   },
   onHide() {
     uni.$emit("stop");
+  },
+  onUnload() {
+  	uni.$emit("stop");  
   },
   methods: {},
 };
