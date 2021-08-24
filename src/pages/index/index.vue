@@ -19,6 +19,7 @@
         src="../../static/aboutus.png"
         class="top-img-class"
         style="width: 83px"
+        @click="toAbout"
       ></image>
     </view>
     <view
@@ -56,47 +57,51 @@ export default {
         {
           title: "索南达杰保护站地图",
           url: "../../static/bg1.jpg",
-          to: "https://mp.weixin.qq.com/s/3JcV-fvlJQ_hPLLx7NDL5g",
+          to: "../../article/sndj_station_map/sndj_station_map",
         },
         {
           title: "动物王国",
           url: "../../static/bg2.jpg",
-          to: "https://mp.weixin.qq.com/s/CbDMmGgVHu7lHvwCtTJhxg",
+          to: "../../article/animal_kingdom/animal_kingdom",
         },
         {
           title: "索南达杰的故事",
           url: "../../static/bg3.jpg",
-          to: "https://mp.weixin.qq.com/s/IE3rdZ-oPkS9s0GlkTIawg",
+          to: "../../article/the_story_of_sndj/the_story_of_sndj",
         },
         {
           title: "巡山过程中的那些故事与精神",
           url: "../../static/bg4.jpg",
-          to: "https://mp.weixin.qq.com/s/5ZMJDtR0qVisluavdE6m1w",
+          to: "../../article/patrol_the_mountain/patrol_the_mountain",
         },
         {
           title: "藏羚羊的养护",
           url: "../../static/bg5.jpg",
-          to: "https://mp.weixin.qq.com/s/qiaQS2Ljo9Kaw-miH-wWVA",
+          to: "../../article/conservation_of_antelope/conservation_of_antelope",
         },
         {
           title: "一切罪恶的起源",
           url: "../../static/bg6.jpg",
-          to: "https://mp.weixin.qq.com/s/g-fJ-fLemK7cFZz2dSHCCA",
+          to: "../../article/the_origin_of_all_evil/the_origin_of_all_evil",
         },
         {
           title: "高寒植物",
           url: "../../static/bg7.jpg",
-          to: "https://mp.weixin.qq.com/s/SMr-on6OmDbDGIxmHaN3sQ",
+          to: "../../article/alpine_plant/alpine_plant",
         },
       ],
     };
   },
   onLoad() {},
   methods: {
-    toDesc(url) {
-      console.log(url);
+    toAbout() {
       uni.navigateTo({
-        url: "../wxLink/index?link=" + url,
+        url: "../about/about",
+      });
+    },
+    toDesc(url) {
+      uni.navigateTo({
+        url: url,
       });
     },
     toPosition() {

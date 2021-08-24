@@ -27,7 +27,7 @@ export default {
   },
   data() {
     return {
-      path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E4%B8%89%E6%B1%9F%E6%BA%90.m4a?raw=true",
+      path: "https://gitee.com/pamaforce/mp3/raw/master/%E4%B8%89%E6%B1%9F%E6%BA%90.m4a",
     };
   },
   onLoad() {
@@ -37,7 +37,7 @@ export default {
     uni.$emit("stop");
   },
   onUnload() {
-  	uni.$emit("stop");  
+    uni.$emit("stop");
   },
   methods: {},
 };
