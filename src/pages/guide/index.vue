@@ -110,10 +110,10 @@
           <view
             class="point-class img-5"
             :style="
-              'left: 69%; top: 61%;width:' +
-              43 * scale +
+              'left: 69%; top: 62.5%;width:' +
+              36 * scale +
               'rpx;height:' +
-              54 * scale +
+              45 * scale +
               'rpx'
             "
             v-show="z"
@@ -125,8 +125,8 @@
           <view
             class="point-class img-6"
             :style="
-              'left: 74%; top: 54.5%;width:' +
-              36 * scale +
+              'left: 74.5%; top: 55%;width:' +
+              35 * scale +
               'rpx;height:' +
               40 * scale +
               'rpx'
@@ -140,8 +140,8 @@
           <view
             class="point-class img-7"
             :style="
-              'left: 91%; top: 30%;width:' +
-              62 * scale +
+              'left: 90%; top: 30%;width:' +
+              75 * scale +
               'rpx;height:' +
               55 * scale +
               'rpx'
@@ -171,7 +171,7 @@
             class="point-class img-9"
             :style="
               'left: 53%; top: 51%;width:' +
-              42 * scale +
+              38 * scale +
               'rpx;height:' +
               50 * scale +
               'rpx'
@@ -348,97 +348,97 @@ export default {
           title: "昆仑山口",
           desc: "青海省海西蒙古族藏族自治州格尔木市109国道附近",
           en: "scene/kunlun_scene/kunlun_scene",
-          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E6%98%86%E4%BB%91%E5%B1%B1.m4a?raw=true",
+          path: "https://github.com/cjdjczym/trans/blob/main/audio/kunlunscene.m4a?raw=true",
         },
         {
           title: "杰桑·索南达杰烈士纪念碑",
           desc: "青海省玉树藏族自治州曲麻莱县109国道西100米",
           en: "scene/monument_scene/monument_scene",
-          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E6%9D%B0%E6%A1%91%C2%B7%E7%B4%A2%E5%8D%97%E8%BE%BE%E6%9D%B0%E7%BA%AA%E5%BF%B5%E7%A2%91.m4a?raw=true",
+          path: "https://github.com/cjdjczym/trans/blob/main/audio/monumentscene.m4a?raw=true",
         },
         {
           title: "布喀达坂峰",
           desc: "青海省玉树藏族自治州治多县",
           en: "scene/bukadaban_scene/bukadaban_scene",
-          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E5%B8%83%E5%96%80%E8%BE%BE%E5%9D%82.aac?raw=true",
+          path: "https://github.com/cjdjczym/trans/blob/main/audio/bukadabanscene.aac?raw=true",
         },
         {
           title: "青藏线",
           desc: "青海省玉树藏族自治州治多县",
           en: "scene/qingzang_scene/qingzang_scene",
-          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E9%9D%92%E8%97%8F%E5%85%AC%E8%B7%AF.aac?raw=true",
+          path: "https://github.com/cjdjczym/trans/blob/main/audio/qingzangscene.aac?raw=true",
         },
         {
           title: "沱沱河",
           desc: "青海省海西蒙古族藏族自治州格尔木市",
           en: "scene/tuotuo_scene/tuotuo_scene",
-          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E6%B2%B1%E6%B2%B1%E6%B2%B3.aac?raw=true",
+          path: "https://github.com/cjdjczym/trans/blob/main/audio/tuotuoscene.aac?raw=true",
         },
         {
           title: "五道梁",
           desc: "青海省玉树藏族自治州治多县",
           en: "scene/wudaoliang_scene/wudaoliang_scene",
-          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E4%BA%94%E9%81%93%E6%A2%81.m4a?raw=true",
+          path: "https://github.com/cjdjczym/trans/blob/main/audio/wudaoliangscene.m4a?raw=true",
         },
         {
           title: "察尔汗盐湖",
           desc: "青海省海西蒙古族藏族自治州格尔木市北60公里",
           en: "scene/chaerhan_scene/chaerhan_scene",
-          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E5%AF%9F%E5%B0%94%E6%B1%97%E7%9B%90%E6%B9%96.m4a?raw=true",
+          path: "https://github.com/cjdjczym/trans/blob/main/audio/chaerhanscene.m4a?raw=true",
         },
         {
           title: "三江源",
           desc: "青海省海西蒙古族藏族自治州",
           en: "scene/sanjiangyuan_scene/sanjiangyuan_scene",
-          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E4%B8%89%E6%B1%9F%E6%BA%90.m4a?raw=true",
+          path: "https://github.com/cjdjczym/trans/blob/main/audio/sanjiangyuanscene.m4a?raw=true",
         },
         {
           title: "卓乃湖",
           desc: "青海省玉树藏族自治州治多县",
           en: "scene/zhuonai_scene/zhuonai_scene",
-          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E5%8D%93%E4%B9%83%E6%B9%96.m4a?raw=true",
+          path: "https://github.com/cjdjczym/trans/blob/main/audio/zhuonaiscene.m4a?raw=true",
         },
         {
           title: "尕朵觉沃",
           desc: "青海省玉树藏族自治州称多县尕朵乡",
           en: "scene/gaduojuewo_scene/gaduojuewo_scene",
-          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E5%B0%95%E6%9C%B5%E8%A7%89%E6%B2%83.m4a?raw=true",
+          path: "https://github.com/cjdjczym/trans/blob/main/audio/gaduojuewoscene.m4a?raw=true",
         },
         {
           title: "楚玛尔河",
           desc: "青海省玉树藏族自治州西部",
           en: "scene/chumaer_scene/chumaer_scene",
-          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E6%A5%9A%E7%8E%9B%E5%B0%94%E6%B2%B3.m4a?raw=true",
+          path: "https://github.com/cjdjczym/trans/blob/main/audio/chumaerscene.m4a?raw=true",
         },
         {
           title: "不冻泉保护站",
           desc: "青海省玉树藏族自治州曲麻莱县109国道北50米",
           en: "station/bdq_station/bdq_station",
-          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E6%BB%95%E7%BB%8D%E6%B3%BD%20%E4%B8%8D%E5%86%BB%E6%B3%89.aac?raw=true",
+          path: "https://github.com/cjdjczym/trans/blob/main/audio/bdqstation.aac?raw=true",
         },
         {
           title: "卓乃湖保护站",
           desc: "青海省玉树藏族自治州治多县卓乃湖旁",
           en: "station/znh_station/znh_station",
-          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E4%BF%9D%E6%8A%A4%E7%AB%99-%E5%8D%93%E4%B9%83%E6%B9%96%E4%BF%9D%E6%8A%A4%E7%AB%99.m4a?raw=true",
+          path: "https://github.com/cjdjczym/trans/blob/main/audio/znhstation.m4a?raw=true",
         },
         {
           title: "沱沱河保护站",
           desc: "青海省玉树藏族自治州治多县109国道北50米",
           en: "station/tth_station/tth_station",
-          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E6%B2%B1%E6%B2%B1%E6%B2%B3%E4%BF%9D%E6%8A%A4%E7%AB%991.m4a?raw=true",
+          path: "https://github.com/cjdjczym/trans/blob/main/audio/tthstation.m4a?raw=true",
         },
         {
           title: "索南达杰保护站",
           desc: "青海省玉树藏族自治州治多县G109(京拉线)",
           en: "station/sndj_station/sndj_station",
-          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E6%9D%B0%E6%A1%91%C2%B7%E7%B4%A2%E5%8D%97%E8%BE%BE%E6%9D%B0%E7%BA%AA%E5%BF%B5%E7%A2%91.m4a?raw=true",
+          path: "https://github.com/cjdjczym/trans/blob/main/audio/sndjstation.m4a?raw=true",
         },
         {
           title: "五道梁保护站",
           desc: "青海省玉树藏族自治州治多县109国道北50米",
           en: "station/wdl_station/wdl_station",
-          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E4%BA%94%E9%81%93%E6%A2%81%E4%BF%9D%E6%8A%A4%E7%AB%99.m4a?raw=true",
+          path: "https://github.com/cjdjczym/trans/blob/main/audio/wdlstation.m4a?raw=true",
         },
       ],
       btnStyle_1: {
