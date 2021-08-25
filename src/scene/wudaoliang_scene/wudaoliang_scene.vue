@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E4%BA%94%E9%81%93%E6%A2%81.m4a?raw=true",
+      path: "https://github.com/cjdjczym/trans/blob/main/audio/wudaoliangscene.m4a?raw=true",
     };
   },
   onLoad() {

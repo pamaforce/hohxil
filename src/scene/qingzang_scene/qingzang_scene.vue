@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E9%9D%92%E8%97%8F%E5%85%AC%E8%B7%AF.aac?raw=true",
+      path: "https://github.com/cjdjczym/trans/blob/main/audio/qingzangscene.aac?raw=true",
     };
   },
   onLoad() {

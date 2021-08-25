@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E4%B8%80%E5%88%87%E7%BD%AA%E6%81%B6%E7%9A%84%E8%B5%B7%E6%BA%90.m4a?raw=true",
+      path: "https://github.com/cjdjczym/trans/blob/main/audio/theoriginofallevil.m4a?raw=true",
     };
   },
   onLoad() {

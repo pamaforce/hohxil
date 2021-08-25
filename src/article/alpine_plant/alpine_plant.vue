@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E9%AB%98%E5%AF%92%E6%A4%8D%E7%89%A9.m4a?raw=true",
+      path: "https://github.com/cjdjczym/trans/blob/main/audio/alpineplant.m4a?raw=true",
     };
   },
   onLoad() {

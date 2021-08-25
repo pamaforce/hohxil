@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E5%AF%9F%E5%B0%94%E6%B1%97%E7%9B%90%E6%B9%96.m4a?raw=true",
+      path: "https://github.com/cjdjczym/trans/blob/main/audio/chaerhanscene.m4a?raw=true",
     };
   },
   onLoad() {

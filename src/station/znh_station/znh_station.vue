@@ -39,7 +39,7 @@ export default {
   },
   data() {
     return {
-      path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E4%BF%9D%E6%8A%A4%E7%AB%99-%E5%8D%93%E4%B9%83%E6%B9%96%E4%BF%9D%E6%8A%A4%E7%AB%99.m4a?raw=true",
+      path: "https://github.com/cjdjczym/trans/blob/main/audio/znhstation.m4a?raw=true",
     };
   },
   onLoad() {

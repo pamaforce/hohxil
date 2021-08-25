@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E5%B7%A1%E5%B1%B1%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E9%82%A3%E4%BA%9B%E6%95%85%E4%BA%8B%E4%B8%8E%E7%B2%BE%E7%A5%9E.m4a?raw=true",
+      path: "https://github.com/cjdjczym/trans/blob/main/audio/patrolthemountain.m4a?raw=true",
     };
   },
   onLoad() {

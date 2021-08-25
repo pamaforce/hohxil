@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E8%97%8F%E7%BE%9A%E7%BE%8A%E7%9A%84%E5%85%BB%E6%8A%A4.m4a?raw=true",
+      path: "https://github.com/cjdjczym/trans/blob/main/audio/conservationofantelope.m4a?raw=true",
     };
   },
   onLoad() {

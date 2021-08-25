@@ -30,7 +30,7 @@ export default {
   },
   data() {
     return {
-      path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E6%A5%9A%E7%8E%9B%E5%B0%94%E6%B2%B3.m4a?raw=true",
+      path: "https://github.com/cjdjczym/trans/blob/main/audio/chumaerscene.m4a?raw=true",
     };
   },
   onLoad() {
