@@ -37,7 +37,7 @@ export default {
     uni.$emit("stop");
   },
   onUnload() {
-  	uni.$emit("stop");  
+    uni.$emit("stop");
   },
   methods: {},
 };

@@ -5,7 +5,9 @@
       <view class="detail-audio">
         <free-audio :audioId="station1" :url="path"></free-audio>
       </view>
-	  <text>进入展厅的右手处，可以看到悬挂着一副关于可可西里保护区的地图。下面的语音将会介绍关于五大保护站的主要工作及藏羚羊迁徙的路径。</text>
+      <text
+        >进入展厅的右手处，可以看到悬挂着一副关于可可西里保护区的地图。下面的语音将会介绍关于五大保护站的主要工作及藏羚羊迁徙的路径。</text
+      >
     </view>
   </view>
 </template>
@@ -28,7 +30,7 @@ export default {
     uni.$emit("stop");
   },
   onUnload() {
-  	uni.$emit("stop");  
+    uni.$emit("stop");
   },
   methods: {},
 };

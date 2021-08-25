@@ -50,10 +50,10 @@
           <view
             class="point-class img-1"
             :style="
-              'left: 91%; top: 49%;width:' +
-              55 * scale +
+              'left: 91.4%; top: 49%;width:' +
+              41 * scale +
               'rpx;height:' +
-              60 * scale +
+              50 * scale +
               'rpx'
             "
             v-show="!y"
@@ -65,8 +65,8 @@
           <view
             class="point-class img-2"
             :style="
-              'left: 85%; top: 47.3%;width:' +
-              91 * scale +
+              'left: 76%; top: 47.3%;width:' +
+              128 * scale +
               'rpx;height:' +
               50 * scale +
               'rpx'
@@ -95,7 +95,7 @@
           <view
             class="point-class img-4"
             :style="
-              'left: 71.8%; top: 58%;width:' +
+              'left: 71.6%; top: 59.5%;width:' +
               45 * scale +
               'rpx;height:' +
               40 * scale +
@@ -155,10 +155,10 @@
           <view
             class="point-class img-8"
             :style="
-              'left: 94%; top: 46.5%;width:' +
-              45 * scale +
+              'left: 91%; top: 47.2%;width:' +
+              65 * scale +
               'rpx;height:' +
-              50 * scale +
+              30 * scale +
               'rpx'
             "
             v-show="!y"
@@ -188,7 +188,7 @@
               'left: 55%; top: 55%;width:' +
               44 * scale +
               'rpx;height:' +
-              55 * scale +
+              45 * scale +
               'rpx'
             "
             v-show="!y"
@@ -200,8 +200,8 @@
           <view
             class="point-class img-12"
             :style="
-              'left: 83.5%; top: 50.8%;width:' +
-              77 * scale +
+              'left: 86%; top: 51.2%;width:' +
+              73 * scale +
               'rpx;height:' +
               40 * scale +
               'rpx'
@@ -230,8 +230,8 @@
           <view
             class="point-class img-14"
             :style="
-              'left: 67%; top: 62%;width:' +
-              77 * scale +
+              'left: 68%; top: 63%;width:' +
+              81 * scale +
               'rpx;height:' +
               40 * scale +
               'rpx'
@@ -245,8 +245,8 @@
           <view
             class="point-class img-15"
             :style="
-              'left: 79%; top: 52.4%;width:' +
-              84 * scale +
+              'left: 82%; top: 52.2%;width:' +
+              86 * scale +
               'rpx;height:' +
               40 * scale +
               'rpx'
@@ -260,7 +260,7 @@
           <view
             class="point-class img-16"
             :style="
-              'left: 73%; top: 55%;width:' +
+              'left: 74.5%; top: 55%;width:' +
               77 * scale +
               'rpx;height:' +
               40 * scale +
@@ -316,7 +316,7 @@
       </u-button>
     </u-popup>
     <view class="audio-class" v-if="showAudio">
-      <free-audio :audioId="0" :url="path"></free-audio>
+      <free-audio :audioId="0" :url="info[showItem].path"></free-audio>
     </view>
     <u-tabbar :list="list"></u-tabbar>
   </view>
@@ -329,7 +329,6 @@ export default {
   },
   data() {
     return {
-      path: "/static/audio/example.mp3",
       preDis: 0,
       scale: 1,
       left: "0px",
@@ -349,81 +348,97 @@ export default {
           title: "昆仑山口",
           desc: "青海省海西蒙古族藏族自治州格尔木市109国道附近",
           en: "scene/kunlun_scene/kunlun_scene",
+          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E6%98%86%E4%BB%91%E5%B1%B1.m4a?raw=true",
         },
         {
           title: "杰桑·索南达杰烈士纪念碑",
           desc: "青海省玉树藏族自治州曲麻莱县109国道西100米",
           en: "scene/monument_scene/monument_scene",
+          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E6%9D%B0%E6%A1%91%C2%B7%E7%B4%A2%E5%8D%97%E8%BE%BE%E6%9D%B0%E7%BA%AA%E5%BF%B5%E7%A2%91.m4a?raw=true",
         },
         {
           title: "布喀达坂峰",
           desc: "青海省玉树藏族自治州治多县",
           en: "scene/bukadaban_scene/bukadaban_scene",
+          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E5%B8%83%E5%96%80%E8%BE%BE%E5%9D%82.aac?raw=true",
         },
         {
           title: "青藏线",
           desc: "青海省玉树藏族自治州治多县",
           en: "scene/qingzang_scene/qingzang_scene",
+          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E9%9D%92%E8%97%8F%E5%85%AC%E8%B7%AF.aac?raw=true",
         },
         {
           title: "沱沱河",
           desc: "青海省海西蒙古族藏族自治州格尔木市",
           en: "scene/tuotuo_scene/tuotuo_scene",
+          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E6%B2%B1%E6%B2%B1%E6%B2%B3.aac?raw=true",
         },
         {
           title: "五道梁",
           desc: "青海省玉树藏族自治州治多县",
           en: "scene/wudaoliang_scene/wudaoliang_scene",
+          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E4%BA%94%E9%81%93%E6%A2%81.m4a?raw=true",
         },
         {
           title: "察尔汗盐湖",
           desc: "青海省海西蒙古族藏族自治州格尔木市北60公里",
           en: "scene/chaerhan_scene/chaerhan_scene",
+          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E5%AF%9F%E5%B0%94%E6%B1%97%E7%9B%90%E6%B9%96.m4a?raw=true",
         },
         {
           title: "三江源",
           desc: "青海省海西蒙古族藏族自治州",
           en: "scene/sanjiangyuan_scene/sanjiangyuan_scene",
+          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E4%B8%89%E6%B1%9F%E6%BA%90.m4a?raw=true",
         },
         {
           title: "卓乃湖",
           desc: "青海省玉树藏族自治州治多县",
           en: "scene/zhuonai_scene/zhuonai_scene",
+          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E5%8D%93%E4%B9%83%E6%B9%96.m4a?raw=true",
         },
         {
           title: "尕朵觉沃",
           desc: "青海省玉树藏族自治州称多县尕朵乡",
           en: "scene/gaduojuewo_scene/gaduojuewo_scene",
+          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E5%B0%95%E6%9C%B5%E8%A7%89%E6%B2%83.m4a?raw=true",
         },
         {
           title: "楚玛尔河",
           desc: "青海省玉树藏族自治州西部",
           en: "scene/chumaer_scene/chumaer_scene",
+          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E6%A5%9A%E7%8E%9B%E5%B0%94%E6%B2%B3.m4a?raw=true",
         },
         {
           title: "不冻泉保护站",
           desc: "青海省玉树藏族自治州曲麻莱县109国道北50米",
           en: "station/bdq_station/bdq_station",
+          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E6%BB%95%E7%BB%8D%E6%B3%BD%20%E4%B8%8D%E5%86%BB%E6%B3%89.aac?raw=true",
         },
         {
           title: "卓乃湖保护站",
           desc: "青海省玉树藏族自治州治多县卓乃湖旁",
           en: "station/znh_station/znh_station",
+          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E4%BF%9D%E6%8A%A4%E7%AB%99-%E5%8D%93%E4%B9%83%E6%B9%96%E4%BF%9D%E6%8A%A4%E7%AB%99.m4a?raw=true",
         },
         {
           title: "沱沱河保护站",
           desc: "青海省玉树藏族自治州治多县109国道北50米",
           en: "station/tth_station/tth_station",
+          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E6%B2%B1%E6%B2%B1%E6%B2%B3%E4%BF%9D%E6%8A%A4%E7%AB%991.m4a?raw=true",
         },
         {
           title: "索南达杰保护站",
           desc: "青海省玉树藏族自治州治多县G109(京拉线)",
           en: "station/sndj_station/sndj_station",
+          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E6%9D%B0%E6%A1%91%C2%B7%E7%B4%A2%E5%8D%97%E8%BE%BE%E6%9D%B0%E7%BA%AA%E5%BF%B5%E7%A2%91.m4a?raw=true",
         },
         {
           title: "五道梁保护站",
           desc: "青海省玉树藏族自治州治多县109国道北50米",
           en: "station/wdl_station/wdl_station",
+          path: "https://github.com/cjdjczym/trans/blob/main/%E6%99%AF%E5%8C%BA%E9%9F%B3%E9%A2%91%E6%96%87%E4%BB%B6/%E4%BA%94%E9%81%93%E6%A2%81%E4%BF%9D%E6%8A%A4%E7%AB%99.m4a?raw=true",
         },
       ],
       btnStyle_1: {
